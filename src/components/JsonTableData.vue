@@ -1,6 +1,6 @@
 <template>
   <div class="JsonTableData">
-    <input type="search" v-model="filter" placeholder="Filter" />
+    <!-- <input type="search" v-model="filter" placeholder="Filter" /> -->
     <table>
       <thead>
         <tr>
@@ -55,24 +55,27 @@ export default {
 
         //turn json string > integer
         for (let index = 0; index < this.crypto.length; index++) {
-          this.crypto[index].rank = parseInt
-          (this.crypto[index].rank)
+          this.crypto[index].rank = parseInt(this.crypto[index].rank);
         }
         for (let index = 0; index < this.crypto.length; index++) {
-          this.crypto[index].price_usd = parseFloat
-          (this.crypto[index].price_usd)
+          this.crypto[index].price_usd = parseFloat(
+            this.crypto[index].price_usd
+          );
         }
         for (let index = 0; index < this.crypto.length; index++) {
-          this.crypto[index].price_btc = parseFloat
-          (this.crypto[index].price_btc)
+          this.crypto[index].price_btc = parseFloat(
+            this.crypto[index].price_btc
+          );
         }
         for (let index = 0; index < this.crypto.length; index++) {
-          this.crypto[index].percent_change_24h = parseFloat
-          (this.crypto[index].percent_change_24h)
+          this.crypto[index].percent_change_24h = parseFloat(
+            this.crypto[index].percent_change_24h
+          );
         }
         for (let index = 0; index < this.crypto.length; index++) {
-          this.crypto[index].percent_change_7d = parseFloat
-            (this.crypto[index].percent_change_7d)
+          this.crypto[index].percent_change_7d = parseFloat(
+            this.crypto[index].percent_change_7d
+          );
         }
       });
   },
