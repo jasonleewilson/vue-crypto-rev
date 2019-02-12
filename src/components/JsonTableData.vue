@@ -44,7 +44,7 @@ export default {
       currentSortDir: "asc",
       pageSize: 10,
       currentPage: 1,
-      filter: " "
+      filter: ""
     };
   },
   created: function() {
@@ -72,7 +72,7 @@ export default {
         }
         for (let index = 0; index < this.crypto.length; index++) {
           this.crypto[index].percent_change_7d = parseFloat
-          (this.crypto[index].percent_change_7d)
+            (this.crypto[index].percent_change_7d)
         }
       });
   },
@@ -96,11 +96,11 @@ export default {
     sortedCrypto: function() {
       let _crypto = this.crypto;
       // first filter
-      // if (this.filter !== "") {
-      //   _crypto = _crypto.filter(
-      //     c => c.name.toLowerCase().indexOf(this.filter.toLowerCase()) >= 0
-      //   );
-      // }
+      if (this.filter !== "") {
+        _crypto = _crypto.filter(
+          c => c.name.toLowerCase().indexOf(this.filter.toLowerCase()) >= 0
+        );
+      }
       return _crypto
         .sort((a, b) => {
           let modifier = 1;
