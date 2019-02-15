@@ -1,6 +1,8 @@
 <template>
-  <div class="JsonTableData">
-    <!-- <input type="search" v-model="filter" placeholder="Filter" /> -->
+  <div class="JsonTableData cell small-12">
+    <div class="cell small-12">
+      <input type="search" v-model="filter" placeholder="Filter" />
+    </div>
     <table>
       <thead>
         <tr>

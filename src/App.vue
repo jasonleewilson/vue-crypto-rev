@@ -1,8 +1,8 @@
 <template>
   <div id="app">
-    <div class="grid-x grid-margin-x text-center align-center JsonTableData">
-      <div class="cell small-12">
-        <div id="nav">
+    <div class="grid-container">
+      <div class="grid-x grid-margin-x text-center align-center JsonTableData">
+        <div id="nav" class="cell small-12">
           <router-link to="/">Home</router-link> |
           <router-link to="/about">About</router-link>
         </div>
