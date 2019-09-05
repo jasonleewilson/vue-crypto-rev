@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/precache-manifest.a01e016b690d537f015ee36c98262bca.js"
+  "/precache-manifest.e83f3e458d507ae4f372f01518b3a5f9.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "vue-crytpo-rev"});
