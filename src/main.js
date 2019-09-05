@@ -9,5 +9,6 @@ Vue.config.productionTip = false;
 new Vue({
   router,
   store,
+  base: "/vue-crypto-rev/",
   render: h => h(App)
 }).$mount("#app");
